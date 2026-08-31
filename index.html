@@ -19,6 +19,7 @@
 </style>
 
 <meta charset="UTF-8">
+<link rel="manifest" href="manifest.json">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <meta name="theme-color" content="#C8102E">
 <title>منبه المواعيد الذكي</title>
@@ -1118,11 +1119,10 @@ function registerPWA(){
       {src:"https://rvnxxms.github.io/shabab-alahli-reminders/icon-512x512-maskable.png", sizes:"512x512", type:"image/png", purpose:"maskable"}
     ]
   };
-  const mBlob = new Blob([JSON.stringify(manifest)], {type:'application/manifest+json'});
-  const mURL = URL.createObjectURL(mBlob);
-  let link = document.querySelector('link[rel="manifest"]');
-  if(!link){ link = document.createElement('link'); link.rel='manifest'; document.head.appendChild(link); }
-  link.href = mURL;
+  // A static manifest.json is now linked directly in <head>, so we no longer
+  // override it with a blob: URL here (blob URLs can't be fetched by
+  // external tools like PWABuilder / Android's TWA packager).
+  void manifest; // kept for reference / potential future dynamic use
 
   // ---- Service Worker inline (blob) ----
   if('serviceWorker' in navigator){

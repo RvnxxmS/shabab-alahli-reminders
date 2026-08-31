@@ -1,0 +1,40 @@
+{
+  "id": "/",
+  "name": "منبه المواعيد الذكي - شباب الأهلي",
+  "short_name": "منبه المواعيد",
+  "description": "منبه ومتابع المواعيد الرسمية",
+  "start_url": "https://rvnxxms.github.io/shabab-alahli-reminders/",
+  "scope": "https://rvnxxms.github.io/shabab-alahli-reminders/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#ffffff",
+  "theme_color": "#C8102E",
+  "dir": "rtl",
+  "lang": "ar",
+  "icons": [
+    {
+      "src": "https://rvnxxms.github.io/shabab-alahli-reminders/icon-192x192-any.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "https://rvnxxms.github.io/shabab-alahli-reminders/icon-512x512-any.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "https://rvnxxms.github.io/shabab-alahli-reminders/icon-192x192-maskable.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "https://rvnxxms.github.io/shabab-alahli-reminders/icon-512x512-maskable.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}
